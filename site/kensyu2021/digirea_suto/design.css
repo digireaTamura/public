@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(201, 129, 87);
+}
+
+.header {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* キャンバス */
+#imgCanvas {
+    background-color: white;
+    margin-left: 300px;
+    margin-right: auto;
+}
+
+/* ボタン */
+.header .buttonBox {
+    float: right;
+    height: 300px;
+    width: 20%;
+    background-color: teal;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-right: 300px;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.header .buttonBox:hover {
+    color: green;
+}
+
+label > input {
+    display: none;
+}
+
+label {
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 10px;
+    float: center;
+    font-size:x-large;
+    font-weight: bold;
+    width: 140px;
+    height: 100px;
+    background-color: rgb(194, 194, 95);
+    text-align: center;
+    padding-right: 65px;
+    padding-left: 75px;
+}
+
+#saveImg {
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: center;
+    font-size:x-large;
+    font-weight: bold;
+    width: 140px;
+    height: 70px;
+}
+
+#playSound {
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: center;
+    font-size:x-large;
+    font-weight: bold;
+    width: 140px;
+    height: 70px;
+    background-color: rgb(51, 39, 39);
+    color: white;
+}

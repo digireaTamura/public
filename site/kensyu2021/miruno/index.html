@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv = "Pragma" content = "no-cache">
+        <meta http-equiv="Cache-Control" content = "no-cache">
+        <!-- <script src="./node_modules/three/examples/fonts/helvetiker_bold.typeface.json"></script> -->
+        <!-- <link type = "text/css" href="index.css" rel="stylesheet"> -->
+
+    </head>
+    <body>
+        <header>
+            <!-- 入力フォーム表示エリア -->
+            <form id = "input" method="post" > 
+                <div>
+                    <label>
+                        <!-- <font color="red">赤色です</font> -->
+                        カード名
+                    </label>
+                    <input type="text" id = "name" name="userName" size="20" maxlength="15" placeholder="英語のみ">
+                    
+                </div>
+
+                <div>
+                    <label>
+                        <!-- <font color="red">赤色です</font> -->
+                        攻撃力
+                    </label>
+                    <input type="number" id = "atk" name="atk" size="5" maxlength="5" >
+                    
+                </div>
+               
+                <div>
+                    <label>
+                        <!-- <font color="red">赤色です</font> -->
+                        守備力
+                    </label>
+                    <input type="number" id = "def" name="def" size="5" maxlength="5" >
+                    
+                </div>
+                
+                <div>
+                    <label>
+                        詳細
+                    </label>
+                    <textarea class="textarea" type="text" id = "message" name="userContents" size="60" cols="30" maxlength="30" placeholder="長すぎるとはみ出ます"></textarea>
+                    <!-- <input type="text" name="user_input" size="60" maxlength="30" placeholder="要ガイドライン準拠"> -->
+                    
+                </div>
+            </form>
+            <br>
+            <!-- 送信ボタン --> 
+            <!-- <button type="button" id = "send_text" form="input">送信</button>
+            -->
+            <button type="button" id = "send" form="input">送信</button>
+            <!-- 保存ボタン -->
+            <button id = "hozon" class="btn" >保存</button>
+            
+        </header>
+        <h1>カードメーカー</h1>
+        <h1>ステータスを入力して下さい</h1>
+        
+        <video id="video" width="320" height="240" autoplay></video>
+
+
+        <!-- <button onclick="saveCanvas('result_scene');" class="btn" >保存</button> -->
+        <!-- <input type="file" id = "filename" onChange="getImg(this.files, 'canvas')"></input> -->
+        
+        
+        <canvas id="preview" width="320" height="240"></canvas>
+        <a name="jumpto"></a>
+    </body>
+    <script src = "./src/porigon.js" type = "module"></script>
+    <!-- <script src = "./src/download.js" type="text/javascript" ></script> -->
+
+    <style>
+    header {
+    display: flex;
+    width: 80%;
+    height: 130px;
+    background-color: darkgrey;
+    align-items: center;
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 0px;
+    /* padding-right: 2rem; */
+    }
+
+    h1{
+        margin-top: 0;
+        padding-left: 20px;
+
+    }
+
+    label{
+        padding-left: 20px;
+
+    }
+
+    </style>
+
+
+
+
+</html>

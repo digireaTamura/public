@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webGL</title>
+    <meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+    <link href="design.css" rel="stylesheet" type="text/css" medeia="all">
+</head>
+
+<!-- ファイル読込 -->
+<script src="./js/b64.js"></script>
+<script src="./js/LZWEncoder.js"></script>
+<script src="./js/NeuQuant.js"></script>
+<script src="./js/GIFEncoder.js"></script>
+<script src="./webApp/reader.js" type="module"></script>
+
+<body>
+    <div class="header">
+        <h2>SOUND VISUALIZER</h2>
+        <div class="buttonBox">
+            <label for="inputImg">IMAGE
+                <input type="file" id="inputImg" accept="image/jpeg, image/png">
+            </label>     
+            <!-- <input type="file" id="inputBackImg" accept="image/jpeg, image/png"> -->
+            <button id="saveImg">Save</button>
+            <!-- <input type="button" id="saveImg" value="SAVE" onclick="saveImg()">
+            <button id="record">Record</button> -->
+            <button id="playSound" disabled>Play</button>
+        </div>
+        <canvas id="imgCanvas"></canvas>
+    </div>
+    
+    <br>
+    
+    <!-- <button id="createGif">Gif</button> -->
+    
+    <!-- <canvas id="2dCanvas"></canvas> -->
+    <!-- <p><img id="animeGif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p> -->
+
+    <!-- <script>
+        // キャンバス上の画像を保存
+        function saveImg() {
+            let link = document.createElement("a");
+            link.href = canvas.toDataURL("image/png");
+            link.download = "canvas.png";
+            link.click();
+        }
+    </script> -->
+
+    <!-- <canvas id="drawArea" width="800px" height="800px" style="border: solid" color="White"></canvas> -->
+
+    <!-- キャンバス -->
+    <!-- <script type="text/javascript">
+        const canvas = document.getElementById('drawArea');
+        const context = canvas.getContext('2d');
+
+        var inputImg = document.getElementById('inputImg');
+        var uploadImgSrc;
+
+        // ファイルが選択されたかどうかを確認
+        inputImg.addEventListener('change', loadLocalImg, false);
+
+        // var texture = new THREE.Texture(inputImg);
+
+        // ファイル画像読込
+        function loadLocalImg (e) {
+            var fileData = e.target.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function() {
+                // texture.needsUpdate = true;
+
+                uploadImgSrc = reader.result;
+                // console.log(uploadImgSrc);
+                // console.log(reader);
+                Reader.load(uploadImgSrc);
+                canvasDraw();
+            }
+
+            reader.readAsDataURL(fileData);
+        }
+
+        // キャンバス上に表示
+        function canvasDraw() {
+            context.clearRect(0, 0, 400, 400);
+
+            img = new Image();
+            img.src = uploadImgSrc;
+            img.onload = function() {
+                canvas.setAttribute("width", img.width + "px");
+                canvas.setAttribute("height", img.height + "px");
+                context.drawImage(img, 0, 0, img.width, img.height); 
+            
+                var data = canvas.toDataURL();
+
+                var outputImg = document.createElement('img');
+                outputImg.src = data;
+            }            
+        }
+
+        // キャンバス上の画像を保存
+        function saveImg() {
+            let link = document.createElement("a");
+            link.href = canvas.toDataURL("image/png");
+            link.download = "canvas.png";
+            link.click();
+        }
+    </script> -->
+
+    <!-- 画像処理
+    <script src="./webApp/webApp.js" type="module"></script> -->
+</body>
