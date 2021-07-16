@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+    </head>
+    <script src="./kadai/kadai.js" type="module"></script>
+    <script src="./../b64.js"></script>
+    <script src="./../LZWEncoder.js"></script>
+    <script src="./../NeuQuant.js"></script>
+    <script src="./../GIFEncoder.js"></script>
+    <body>
+        <input type="file" accept="image/jpeg, image/png">
+        <button id="button">camera launch</button>
+        <button id="button2" style="display:none;">take picture</button>
+        <button id="gifStart">gif</button>
+        [gif]ボタン押下で録画開始、再押下で録画終了
+        <br>
+        <button id="dlButton">download(jpg)</button>
+        <button id="gifDownload" style="display:none;">download(gif)</button>
+        <video id="camera" autoplay style='display:none;'></video>
+    </body>
+</html>
