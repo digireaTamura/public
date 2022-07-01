@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WebGL入門</title>
+    <link rel="stylesheet" href="./kadai/styles.css">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+
+</head>
+<script src="./kadai/kadai.js" type="module"></script>
+
+<body>
+    <div class="panel">
+        <input type="file" id="file_picker">
+        <button id="download_button">Download</button>
+        <button id="isVideo">Video/Image</button>
+        <button id="doDot">Effect</button>
+        <button id="doParticle">Particle</button>
+        <input type="range" id="grid" min="1" max="500" value="40" step="1">
+        <input type="range" id="distort" min="0" max="0.08" value="0.02" step="0.001">
+        <video id="video" type="hidden"></video>
+    </div>
+</body>
+
+</html>

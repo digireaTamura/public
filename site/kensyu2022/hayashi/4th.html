@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="stylesheet" href="./step4/4th.css">
+</head>
+<script src="./step4/4th.js" type="module"></script>
+<script src="./step4/site.js" type="module"></script>
+
+<body>
+    <section id="body">
+        <div class="panel">
+            <input type="file" accept='image/*' id="upload">
+            <input type="button" id="download" value="ダウンロード">
+            <a id="download_link"></a>
+            <!-- <img src="" id="preview-image"> -->
+            <div>
+                <label>赤<input type="range" id="bar_red" min="0.0" max="1.0" step="0.01" value="1.0"></label>
+                <label>緑<input type="range" id="bar_gre" min="0.0" max="1.0" step="0.01" value="1.0"></label>
+                <label>青<input type="range" id="bar_blu" min="0.0" max="1.0" step="0.01" value="1.0"></label>
+            </div>
+            <div>
+                <label>色収差<input type="range" id="chromatism" min="0.0" max="0.1" step="0.00001" value="0.0"></label>
+            </div>
+            <div>
+                <label>モザイク<input type="checkbox" id="isUsed_mosaic" checked="false"></label>
+                <label>タイル数<input type="range" id="mosa_tile" min="1.0" max="50.0" step="1.0" value="50.0"></label>
+                <label>自動変化<input type="range" id="mosa_move" min="0.0" max="1" step="0.01" value="0.0"></label>
+            </div>
+            <div>
+                <label>グリッチ<input type="checkbox" id="isUsed_glitch" checked="false"></label>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

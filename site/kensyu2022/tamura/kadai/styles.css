@@ -1,0 +1,24 @@
+#video {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.panel {
+    position:absolute; /* 親要素にstatic以外のpositionの値を指定する必要あり */
+    top:10px;
+    left:10px;
+}
